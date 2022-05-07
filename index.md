@@ -9,29 +9,62 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+<h1 style="color:white">LPG</h1>
+<h2 style="color:white">Brandon Kuehn</h2>
+<h3 style="color:white">11 May 2022</h3>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  p{text-align: center; color: white}
+  
+body { 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-image: url("fishing background1.jpg");
 
-# Header 1
-## Header 2
-### Header 3
+  padding: 20px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 
-- Bulleted
-- List
+}
 
-1. Numbered
-2. List
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 460;
+}
 
-**Bold** and _Italic_ and `Code` text
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+  font-size: 17px;
+}
 
-[Link](url) and ![Image](src)
-```
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Monkeyninja5/LPGmain/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<ul class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="Multimediapage.html">Multimedia</a>
+  <a href="images.html">Images</a>
+  <a href="Links.html">Links</a>
+  <a href="MyStory.html">My Story</a>
+</ul class="topnav">
+<hr>
