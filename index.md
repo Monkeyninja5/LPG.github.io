@@ -4,11 +4,6 @@ You can use the [editor on GitHub](https://github.com/Monkeyninja5/LPGmain/edit/
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
 <h1 style="color:white">LPG</h1>
 <h2 style="color:white">Brandon Kuehn</h2>
 <h3 style="color:white">11 May 2022</h3>
