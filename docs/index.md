@@ -11,12 +11,11 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-Welcome to the Local Physicians Group Website, in the Local Physicians Group we strive to provide the best medical care to you and your family. We have approximately 25 physicians, labe and x-ray technicians, nurses and assistants as well as front office staff. In the community that we are so blessed to serve we have approximately 3,000 patients, delivering services such as emergency medical treatment, wellness checkups, diseas management, as well as many other medical offerings.
+Welcome to the Local Physicians Group Website, in the Local Physicians Group we strive to provide the best medical care to you and your family. 
+We have approximately 25 physicians, labe and x-ray technicians, nurses and assistants as well as front office staff. 
+In the community that we are so blessed to serve we have approximately 3,000 patients. 
+Delivering services such as emergency medical treatment, wellness checkups, diseas management, as well as many other medical offerings.
 
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
