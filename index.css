@@ -1,0 +1,43 @@
+/* Centered heading with rules */
+h1 {
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+	text-overflow: ellipsis;
+	color: #f2c63f;
+	font: 1.6em/1.1 Georgia;
+	padding: .2em 0;
+	}
+h1:before,
+h1:after {
+	content: "";
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: 2px;
+	
+	vertical-align: middle;
+	background: #000;
+	}
+h1:before {    
+	left: -.5em;
+	margin: 0 0 0 -50%;
+	}
+h1:after {    
+	left: .5em;
+	margin: 0 -50% 0 0;
+	}
+h1>span {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	}
+
+/* Works on any background */
+html {
+	background: url(http://kevinbongart.net/images/background.jpg);
+	min-height:100%;
+	font: 1.3em/1.5 Georgia;
+	color: #d1d1d1;
+	}
