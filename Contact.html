@@ -12,19 +12,19 @@
       <input type="radio" name="Department" id=Cardiology" value="Cardiologydept@LPG.com">  </div>
       <div>
       <label>Oncology</label>
-      <input type="radio" name="Department" id=Oncology"> </div>
+      <input type="radio" name="Department" id=Oncology" value="Oncologydept@LPG.com"></div>
       <div>  
       <label>Wellness</label>
-        <input type="radio" name="Department" id=Wellness"></div>
+        <input type="radio" name="Department" id=Wellness"value="Wellnessdept@LPG.com"></div>
       <div>                                                    
       <label>Chiropractic</label>
-      <input type="radio" name="Department" id=Chiropractic"></div>
+      <input type="radio" name="Department" id=Chiropractic"value="Chiropracticdept@LPG.com"></div>
       <div>
       <label>Emergency</label>
-      <input type="radio" name="Department" id=Emergency"></div>
+      <input type="radio" name="Department" id=Emergency"value="Emergencydept@LPG.com"></div>
       <div>
        <label> Brief explanation of issue</label></div>                                                   
-      <textarea id=Brief explanation of issue name="issue">Type issue here </textarea>
+      <textarea id=Brief explanation of issue name="issue"> </textarea>
       
       <div>
       <button class="emailReplyButton" onClick="sendEmail(message)
@@ -34,7 +34,7 @@ sendEmail(message) {
     var emailBody = 'Hi '+message.from;
     document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
 }">Submit</button>
-<a href="mailto:reception@LPG.com"><img src= "email.jpg" style= width="50" height"50"> </a>
+<a href="mailto:reception@LPG.com"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
     
 </body>
