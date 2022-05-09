@@ -8,10 +8,10 @@
     <label>Phone Number</label>
     <input type="tel" name="phone" id = "phone">
     <div>
-    <label>Cardiology</label>
-      <input type="radio" name=Department id=Cardiology" value="Cardiologydept@LPG.com">  </div>
+    <label for="Cardiology"> Cardiology</label>
+      <input type="radio" name="Department" id="Cardiology" value="Cardiologydept@LPG.com">  </div>
       <div>
-      <label>Oncology</label>
+      <label>for="Oncology"</label>
       <input type="radio" name=Department id=Oncology" value="Oncologydept@LPG.com"></div>
       <div>  
       <label>Wellness</label>
@@ -27,14 +27,9 @@
       <textarea id=Brief explanation of issue name= issue> </textarea>
       
       <div>
-      <button class="emailReplyButton" onClick="sendEmail(message)
-sendEmail(message) {
-    var email = message.emailId;
-    var subject = message.subject;
-    var emailBody = 'Hi '+message.from;
-    document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
-}">Submit</button>
-<a href="mailto:Reception@LPG.com?subject=+Department&body=Name+ Email Address Phone Number issue"><img src= "email.jpg" style= width="50" height="50"> </a>
+
+
+<a href="mailto:Reception@LPG.com?subject=Department&body=Name Email Address Phone Number issue"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
     
 </body>
