@@ -32,16 +32,16 @@
       <div>
    <button class="emailReplyButton" onClick="sendEmail(message)">Reply</button>
 
-sendEmail(message) {
-    var email = message.EmailAddress;
-    var subject = message.Department;
-    var emailBody = 'Hi '+message.issue;
-    document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
 }
 
 <a href="mailto:Reception@LPG.com?subject=Department&body=Name EA Phone issue"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
     
 </body>
-    
+  sendEmail(message) {
+    var email = message.EmailAddress;
+    var subject = message.Department;
+    var emailBody = 'Hi '+message.issue;
+    document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+}  
    
