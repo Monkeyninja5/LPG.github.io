@@ -6,11 +6,22 @@
     
     <label>Name</label>
       <input id="Name" required>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
    <script>
-    function getInputFromTextBox() {
-    var Name = document.getElementById("Name").value;
-    alert(Name);
-}
+    function sendEmail(){ 
+    Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+     
     </script>
    
     <label>EmailAddress</label>
@@ -39,7 +50,24 @@
       <textarea id= issue name= issue cols="30" rows="10"> </textarea>
 
       <div>
- <button class="SendEmail">Send Email</button>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script>
+    function sendEmail(){ 
+    Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+     
+    </script>
+ <button class="sendEmail", reset():>Send Email</button>
 
 <a href="mailto:Reception@LPG.com?subject=Department&body=Name EA Phone issue"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
