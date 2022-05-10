@@ -30,17 +30,20 @@
       <textarea id=Brief explanation of issue name= issue cols="30" rows="10"> </textarea>
 
       <div>
-   <button class="emailReplyButton" onClick="sendEmail(message)">Submit</button>
+ <button class="SendEmail">Send Email</button>
 
 <a href="mailto:Reception@LPG.com?subject=Department&body=Name EA Phone issue"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
     
 </body>
-  <script>
-  sendEmail(message) {
-    var email = message.EmailAddress;
-    var subject = message.Department;
-    var emailBody = 'Hi '+message.issue;
-    document.location = "mailto:Reception@LPG.com""?subject="+subject+"&body="+emailBody;
-  }  </script>
+$(function () {
+      $('.SendEmail').click(function (event) {
+        var email = 'sample@gmail.com';
+        var subject = 'Test';
+        var emailBody = 'Hi Sample,';
+        var attach = 'path';
+        document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody+
+            "?attach="+attach;
+      });
+    });
    
