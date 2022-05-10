@@ -35,18 +35,13 @@
 
       <div>
         <script>
+           function email(){
            var Name = document.getElementById('Name');
            var EA = document.getElementById('Email');
            var Department = document.getElementById('Department');
            var Phone = document.getElementById('phone');
            var issue = document.getElementById('issue');
-          
-          function email(){
-            out1.innerHTML = Name.value;
-            out2.innerHTML = EA.value;
-            out3.innerHTML = Department.value;
-            out4.innerHTML = Phone.value;
-            out5.innerHTML = issue.value;
+         
             document.location = "mailto:"+Department+"?subject=New appointment1&body="+Name+" "+EA+" "+Phone+" "+issue;
           }
           sendEmail.addEventListener('click',email);
