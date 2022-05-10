@@ -1,14 +1,16 @@
 <h1> Contact Page </h1>
 <body>
   <script>
-    function fn1(){ 
+   $(function (){
+     $('.SendEmail').click(function(event){
     var Name = document.getElementByID("Name").value;
       var EmailAddress = document.getElementByID("EmailAddress").value;
       var Phone = document.getElementByID("phone").value;
       var issue = document.getElementByID("issue").value;
       var Department = document.getElementByID("Department").value;
       alert("made it this far")
-     document.location = "mailto:Reception@LPG.com"+"?subject="+Department+"&body="+EmailAddress+Phone+issue;}
+     document.location = "mailto:Reception@LPG.com"+"?subject="+Department+"&body="+EmailAddress+Phone+issue;});
+   });
     </script>
   <form action="#" method="post">
     
@@ -41,7 +43,7 @@
       <textarea id= issue name= issue cols="30" rows="10"> </textarea>
 
       <div>
- <button onclick = "fn1()" id="SendEmail">Send Email</button>
+ <button class="SendEmail">Send Email</button>
 
 <a href="mailto:Reception@LPG.com?subject=Department&body=Name EA Phone issue"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
