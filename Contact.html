@@ -47,9 +47,10 @@
             out3.innerHTML = Department.value;
             out4.innerHTML = Phone.value;
             out5.innerHTML = issue.value;
+            document.location = "mailto:"+Department+"?subject=New appointment1&body="+Name+" "+EA+" "+Phone+" "+issue;
           }
           sendEmail.addEventListener('click',email);
-          document.location = "mailto:"+Department+"?subject=New appointment1&body="+Name+" "+EA+" "+Phone+" "+issue;
+      
           
         </script>
  <button class="sendEmail">Send Email</button>
