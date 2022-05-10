@@ -1,6 +1,6 @@
 <h1> Contact Page </h1>
 <body>
-
+<script src="Contact.js"></script>
   <form action="#" method="post">
     
     
@@ -34,21 +34,8 @@
       <textarea id= issue name= issue cols="30" rows="10"> </textarea>
 
       <div>
-        <script>
-           function email(){
-           var Name = document.getElementById('Name');
-           var EA = document.getElementById('Email');
-           var Department = document.getElementById('Department');
-           var Phone = document.getElementById('phone');
-           var issue = document.getElementById('issue');
-         
-            document.location = "mailto:"+Department+"?subject=New appointment1&body="+Name+" "+EA+" "+Phone+" "+issue;
-          }
-          sendEmail.addEventListener('click',email);
-      
-          
-        </script>
- <button class="sendEmail">Send Email</button>
+
+ <button onClick="email()">Send Email</button>
 
 <a href="mailto:Reception@LPG.com?subject=Department&body=Name.value + EA + Phone + issue"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
