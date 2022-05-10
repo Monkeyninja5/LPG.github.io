@@ -1,10 +1,10 @@
 <script>
            function email(){
-           var Name = document.getElementById('Name');
-           var EA = document.getElementById('Email');
-           var Department = document.getElementById('Department');
-           var Phone = document.getElementById('phone');
-           var issue = document.getElementById('issue');
+           var Name = document.getElementById("Name").value;
+           var EA = document.getElementById("Email").value;
+           var Department = document.getElementById("Department").value;
+           var Phone = document.getElementById("phone").value;
+           var issue = document.getElementById("issue").value;
          
             document.location = "mailto:"+Department+"?subject=New appointment1&body="+Name+" "+EA+" "+Phone+" "+issue;
           }
