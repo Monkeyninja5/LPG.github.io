@@ -5,8 +5,8 @@
     
     <label>Name</label>
       <input required>
-    <label>Email Address</label>
-      <input type="Email Address" name="Email Address" id = "Email Address" var EA = document.getElementById("Email Address").value;>
+    <label>EmailAddress</label>
+      <input type="Email Address" name="EmailAddress" id = "EmailAddress" vlaue="EmailAddress";>
     <label>Phone Number</label>
     <input type="tel" name="phone" id = "phone"result.value=Phoney.>
     <div>
@@ -30,16 +30,18 @@
       <textarea id=Brief explanation of issue name= issue cols="30" rows="10"> </textarea>
 
       <div>
+   <button class="emailReplyButton" onClick="sendEmail(message)">Reply</button>
 
+sendEmail(message) {
+    var email = message.EmailAddress;
+    var subject = message.Department;
+    var emailBody = 'Hi '+message.issue;
+    document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+}
 
 <a href="mailto:Reception@LPG.com?subject=Department&body=Name EA Phone issue"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
     
 </body>
     
-    <script>
-   function getDataForm(e){
-     var formData = new FormData(form[0]);
-     alert( formData.get('Name') + ' - '+ formData.get('Email Address') + ' _ " +formData.get('Department')
-   }
-        </script>
+   
