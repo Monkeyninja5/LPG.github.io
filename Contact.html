@@ -1,23 +1,15 @@
 <h1> Contact Page </h1>
 <body>
-  <script type ="javascript">
-    alert("vinni sucks");
-   $(function (){
-     $('.SendEmail').click(function(event)){
-      String Name = document.getElementByID("Name").value;
-      String EmailAddress = document.getElementByID("EmailAddress").value;
-      String Phone = document.getElementByID("phone").value;
-      String issue = document.getElementByID("issue").value;
-      String Department = document.getElementByID("Department").value;
-      alert("made it this far")
-     document.location = "mailto:Reception@LPG.com"+"?subject="+Department+"&body="+EmailAddress+Phone+issue;});
-   });
-    </script>
+
   <form action="#" method="post">
     
     
     <label>Name</label>
       <input id="Name" required>
+    function getInputFromTextBox() {
+    var Name = document.getElementById("Name").value;
+    alert(Name);
+}
     <label>EmailAddress</label>
       <input type="Email Address" name="EmailAddress" id="EmailAddress" required>
 
