@@ -1,7 +1,7 @@
 <script>
            function email(){
            var Name = document.getElementById("Name").value;
-           var EA = document.getElementById("Email").value;
+           var EA = document.getElementById("EmailAddress").value;
            var Department = document.getElementById("Department").value;
            var Phone = document.getElementById("phone").value;
            var issue = document.getElementById("issue").value;
