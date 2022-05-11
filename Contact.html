@@ -39,7 +39,9 @@
     var EmailAddress = document.getElementById("EmailAddress").innerHTML;
     var phone = document.getElementById("phone").innerHTML;
     var issue = document.getElementById("issue").innerHTML;
-    var emailer = new HTMLString.String("mailto:Reception@LPG.com?subject" + Department +"&body=" + Name + EmailAddress + phone + issue)}
+    var emailer = new HTMLString.String("mailto:Reception@LPG.com?subject" + Department +"&body=" + Name + EmailAddress + phone + issue)
+    window.location.href = emailer;
+    }
     </script>
       <div>
           
