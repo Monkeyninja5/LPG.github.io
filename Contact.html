@@ -34,11 +34,11 @@
       <textarea id= issue name= issue cols="30" rows="10"> </textarea>
 
       <div>
-          var emailer = new HTMLString.String("mailto:Reception@LPG.com?subject" + Department +"&body=" + Name + EmailAddress + phone + issue)
+          
  <button onClick="email()">Send Email</button>
 <a href=emailer><img src="email.jpg" style= width="50" height="50"> </a>
 //<a href="mailto:Reception@LPG.com?subject=+Department+&body=Name + EmailAddress + phone + issue"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
     
 </body>
-
+var emailer = new HTMLString.String("mailto:Reception@LPG.com?subject" + Department +"&body=" + Name + EmailAddress + phone + issue)
