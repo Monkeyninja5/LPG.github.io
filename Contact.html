@@ -2,20 +2,6 @@
 <h2> Contact Page </h2>
      <head> 
     <title>Contact Form</title>
-<script type="text/javascript">
-
-
-  function Email(){
-
-  var Department = document.getElementById("Department");
-  var Name = document.getElementById("Name");
-  var EmailAddress = document.getElementById("EmailAddress");
-  var phone = document.getElementById("phone");
-  var issues = document.getElementById("issue");
-    var emailer = "mailto:Reception@LPG.com?subject=Department&body="Name EmailAddress phone issues;
- 
-    return emailer; } 
- </script>
 </head>
 <body>
   <form action="mailto:Reception@LPG.com?subject=Department&body="+Name+EmailAddress+phone+issues" method="PUT">
@@ -51,8 +37,22 @@
       <textarea id= issues name= issues cols="30" rows="10"> </textarea>
    
       <div>
+                                                           <script type="text/javascript">
+
+
+  function Email(){
+
+  var Department = document.getElementById("Department");
+  var Name = document.getElementById("Name");
+  var EmailAddress = document.getElementById("EmailAddress");
+  var phone = document.getElementById("phone");
+  var issues = document.getElementById("issue");
+    var emailer = "mailto:Reception@LPG.com?subject=Department&body="Name EmailAddress phone issues;
+ 
+    return emailer; } 
+ </script>
            <button  onclick = "Email()">Submit</button>
-<a href=Email()><img src= "email.jpg" style= width="50" height="50"> </a>
+
 <a href="mailto:Reception@LPG.com?subject=Department&body=Name  EmailAddress  phone  issue"><img src= "email.jpg" style= width="50" height="50"> </a>
   </form>
     
