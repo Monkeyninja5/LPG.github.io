@@ -33,7 +33,13 @@
        <label> Brief explanation of issue</label></div>                                                   
       <textarea id= issue name= issue cols="30" rows="10"> </textarea>
   <script>
-    var emailer = new HTMLString.String("mailto:Reception@LPG.com?subject" + Department +"&body=" + Name + EmailAddress + phone + issue)
+   function email(){
+    var Department = document.getElementById("Department").innerHTML;
+    var Name = document.getElementById("Name").innerHTML;
+    var EmailAddress = document.getElementById("EmailAddress").innerHTML;
+    var phone = document.getElementById("phone").innerHTML;
+    var issue = document.getElementById("issue").innerHTML;
+    var emailer = new HTMLString.String("mailto:Reception@LPG.com?subject" + Department +"&body=" + Name + EmailAddress + phone + issue)}
     </script>
       <div>
           
