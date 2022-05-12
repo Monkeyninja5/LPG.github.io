@@ -1,60 +1,13 @@
-<h1 style= "text-align: center">LPG</h1>
-<h2> Contact Page </h2>
-     <head> 
-    <title>Contact Form</title>
-</head>
-<body>
-  <form action="mailto:Reception@LPG.com?subject=Department&body="+Name+EmailAddress+phone+issues" method="PUT">
-    
-    
-    <label>Name</label>
-      <input id="Name" required>
+<form action="mailto:Reception@LPG.com?subject=New Appointment&body="; method="post" enctype="text/plain" >
+<p>Name:<input type="text" name="Name" required>
+Email:<input type="EmailAddress" name="EmailAddress"required>
+Phone Number:<input type ="phone" name="phone"required></p>
+Issue:<input type="textarea" name=issue required>
+<div>Cardiology:<input type="radio" name="Department" id="Department" value="Cardiologydept@LPG.com"></div>
+<div>Oncology:<input type="radio" name="Department" id="Department" value="Oncologydept@LPG.com"></div>
+<div>Wellness:<input type="radio" name="Department" id="Department" value="Wellnessdept@LPG.com"></div>
+<div>Chiropractic:<input type="radio" name="Department" id="Department" value="Chiropracticdept@LPG.com"></div>
+<div>Emergency:<input type="radio" name="Department" id="Department" value="Emergencydept@LPG.com"></div>
+<button type="submit">Submit</button>
 
-   
-    <label>EmailAddress</label>
-      <input type="Email Address" name="EmailAddress" id="EmailAddress" required>
-
-    <label>Phone Number</label>
-    <input type="tel" name=phone id = phone required>
-    <div>
-    <label for="Cardiology">Cardiology</label>
-      <input type="radio" name="Department" id="Department" value="Cardiologydept@LPG.com">  </div>
-      <div>
-      <label for="Oncology">Oncology</label>
-      <input type="radio" name="Department" id="Department" value="Oncologydept@LPG.com" result.value=Departmenty.></div>
-      <div>  
-      <label>Wellness</label>
-        <input type="radio" name="Department" id="Department" value="Wellnessdept@LPG.com" result.value=Departmenty.></div>
-      <div>                                                    
-      <label>Chiropractic</label>
-      <input type="radio" name="Department" id="Department" value="Chiropracticdept@LPG.com" result.value=Departmenty.></div>
-      <div>
-      <label>Emergency</label>
-      <input type="radio" name="Department" id="Department" value="Emergencydept@LPG.com" result.value=Departmenty.></div>
-      <div>
-        
-       <label> Brief explanation of issue</label></div>                                                   
-      <textarea id= issues name= issues cols="30" rows="10"> </textarea>
-   
-      <div>
-                                                           <script type="text/javascript">
-
-
-  function Email(){
-
-  var Department = document.getElementById("Department");
-  var Name = document.getElementById("Name");
-  var EmailAddress = document.getElementById("EmailAddress");
-  var phone = document.getElementById("phone");
-  var issues = document.getElementById("issue");
-    var emailer = "mailto:Reception@LPG.com?subject=Department&body="Name EmailAddress phone issues;
- 
-    return emailer; } 
- </script>
-           <button  onclick = "Email()">Submit</button>
-                                       <button onClick = "Contact.js">Fart</button>
-
-<a href="mailto:Reception@LPG.com?subject=Department&body=Name  EmailAddress  phone  issue"><img src= "email.jpg" style= width="50" height="50"> </a>
-  </form>
-    
-</body>
+</form>
